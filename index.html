@@ -226,12 +226,12 @@
 </body>
 <script>
 
-            function sendMessage() {
-            const message = document.getElementById('message').value;
-            const phone = '201100718942'; // استبدل برقمك
-            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            window.open(url, '_blank');
-        }
+    function sendMessage() {
+        const message = document.getElementById('message').value;
+        const pageId = 'YOUR_PAGE_ID'; // استبدل بـ Page ID الخاص بك أو اسم المستخدم
+        const url = `https://m.me/${pageId}?ref=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    }
     let inp = document.getElementById("inputx");
     let ho = document.getElementsByClassName("ho")[0];
     let t = document.getElementsByClassName("t")[0];
