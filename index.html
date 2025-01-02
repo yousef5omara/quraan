@@ -7,32 +7,125 @@
     <title>معلومات السور</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
-
         @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
 
+        /* التنسيق العام */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-       
 
+        body {
+            font-family: 'Noto Kufi Arabic', serif;
+        }
 
+        main {
+            background: url("صور-خلفيات-دينية-إسلامية-رائعة-للجوال.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            color: white;
+        }
+
+        .date {
+            color: gold;
+            font-weight: 700;
+            font-family: "Cairo Play", serif;
+            margin-bottom: 25px;
+            direction: rtl;
+            font-size: 1.2em;
+        }
+
+        .card {
+            background: #212121;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .ho {
+            color: #eeee;
+            font-size: 1em;
+            font-family: "Cairo Play", serif;
+            text-align: justify;
+        }
+
+        .input__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+
+        .input__search {
+            width: calc(100% - 60px);
+            max-width: 300px;
+            padding: 0.8em;
+            border-radius: 13em;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            color: #002019;
+            background-color: #f3fff9;
+        }
+
+        .input__search::placeholder {
+            color: #002019;
+            opacity: 0.7;
+        }
+
+        .input__button__shadow--variant {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #07372C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.8s ease;
+            border: none;
+        }
+
+        .input__button__shadow--variant:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            background-color: #18be8a;
+        }
 
         #message {
-            width: 270px;
-             padding: 5px;
-    height: 40px;
-             background: #212121;
+            width: 90%;
+            max-width: 270px;
+            padding: 5px;
+            height: 40px;
+            background: #212121;
             color: #eeee;
-    border-radius: 15px;
-              font-family: "Noto Kufi Arabic", serif;
+            border-radius: 15px;
+            font-family: "Noto Kufi Arabic", serif;
             margin-top: 10px;
-    outline: none;
-    border: goldenrod 1px solid;
+            outline: none;
+            border: goldenrod 1px solid;
         }
+
         .bt {
-            width: 100px;
+            width: 100%;
+            max-width: 150px;
             height: 30px;
             border-radius: 15px;
             margin-top: 15px;
@@ -41,130 +134,11 @@
             color: white;
             transition: 0.8s ease;
             font-family: "Noto Kufi Arabic", serif;
-           cursor: pointer;
-           
-
-        }
-        .bt:hover{
-           transform: scale(1.1);
-        }
-        main {
-            background: url("صور-خلفيات-دينية-إسلامية-رائعة-للجوال.jpg") no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-           
-               overflow: auto;
-            justify-content: center;
-        }
-
-        span {
-            color: #07372C;
-            font-family: sans-serif;
-        }
-
-        .card {
-            width: 350px;
-            height: 320px;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 10px;
-            border-radius: 30px;
-            background: #212121;
-            box-shadow: 15px 15px 30px rgb(25, 25, 25), -5px -7px 13px 0px rgb(60, 60, 60);
-            color: #eeee;
-            font-size: 30px;
-            font-family: "Cairo Play", serif;
-
-            margin-right: 10px;
-            border: goldenrod 1px dashed;
-
-        }
-
-        .ho {
-            color: #eeee;
-            font-size: 25px;
-            font-family: "Cairo Play", serif;
-            margin-left: 30px;
-
-        }
-
-
-        .main {
-
-
-            margin-top: 5px;
-            height: 800px;
-            border-radius: 15px;
-               overflow: auto;
-            padding: 5px;
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            align-items: center;
-            justify-content: center;
-
-
-        }
-
-        .input__container--variant {
-            background: linear-gradient(to bottom, #F3FFF9, #F3FFF9);
-            border-radius: 30px;
-            max-width: 13em;
-            padding: 1em 1em;
-            border: goldenrod 3px solid;
-        }
-
-        .shadow__input--variant {
-            filter: blur(25px);
-            border-radius: 30px;
-            background-color: #F3FFF9;
-            opacity: 0.5;
-        }
-
-        .input__button__shadow--variant {
-            border-radius: 15px;
-            background-color: #07372C;
-            transform: translateX(-8px);
-            transition: 0.8s ease;
-            padding: 10px;
-            border: none;
-        }
-
-        .input__button__shadow--variant:hover {
             cursor: pointer;
+        }
+
+        .bt:hover {
             transform: scale(1.1);
-
-            background-color: #18be8a;
-        }
-
-        .input__search--variant {
-            width: 13em;
-            align-items: center;
-            border-radius: 13em;
-            outline: none;
-            border: none;
-            padding: 0.8em;
-            font-size: 1.2em;
-            color: #002019;
-            background-color: transparent;
-        }
-
-        .input__search--variant::placeholder {
-            color: #002019;
-            opacity: 0.7;
-        }
-
-        .input__container--variant {
-            background: linear-gradient(to bottom, #F3FFF9, #F3FFF9);
-            border-radius: 1.5em;
-            max-width: 14em;
-            padding: 1em;
-            box-shadow: 0em 1em 3em #beecdc64;
         }
 
         h2 {
@@ -174,12 +148,45 @@
             margin-top: 12px;
         }
 
-        .date{
-            color: gold;
-                        font-weight: 700;
-            font-family: "Cairo Play", serif;
-            margin-bottom: 25px;
-            direction: rtl;
+        h2 span {
+            color: #07372C;
+            font-family: sans-serif;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                height: auto;
+            }
+
+            .main {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .card {
+                font-size: 0.9em;
+            }
+
+            .date {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .input__search {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .input__button__shadow--variant {
+                width: 100%;
+            }
+
+            .bt {
+                font-size: 0.8em;
+            }
         }
 
 
