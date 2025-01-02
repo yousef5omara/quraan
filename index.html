@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            background: url("صور-خلفيات-دينية-إسلامية-رائعة-للجوال.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            color: #07372C;
+            font-family: sans-serif;
+        }
+
+        .card {
+            width: 350px;
+            height: 320px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            border-radius: 30px;
+            background: #212121;
+            box-shadow: 15px 15px 30px rgb(25, 25, 25), -5px -7px 13px 0px rgb(60, 60, 60);
+            color: #eeee;
+            font-size: 30px;
+            font-family: "Cairo Play", serif;
+
+            margin-right: 10px;
+            border: goldenrod 1px dashed;
+
+        }
+
+        .ho {
+            color: #eeee;
+            font-size: 25px;
+            font-family: "Cairo Play", serif;
+            margin-left: 30px;
+
+        }
+
+
+        .main {
+
+
+            margin-top: -70px;
+            height: 907px;
+            border-radius: 15px;
+
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .input__container--variant {
+            background: linear-gradient(to bottom, #F3FFF9, #F3FFF9);
+            border-radius: 30px;
+            max-width: 13em;
+            padding: 1em 1em;
+            border: goldenrod 3px solid;
+        }
+
+        .shadow__input--variant {
+            filter: blur(25px);
+            border-radius: 30px;
+            background-color: #F3FFF9;
+            opacity: 0.5;
+        }
+
+        .input__button__shadow--variant {
+            border-radius: 15px;
+            background-color: #07372C;
+            transform: translateX(-8px);
+            transition: 0.8s ease;
+            padding: 10px;
+            border: none;
+        }
+
+        .input__button__shadow--variant:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+
+            background-color: #18be8a;
+        }
+
+        .input__search--variant {
+            width: 13em;
+            align-items: center;
+            border-radius: 13em;
+            outline: none;
+            border: none;
+            padding: 0.8em;
+            font-size: 1.2em;
+            color: #002019;
+            background-color: transparent;
+        }
+
+        .input__search--variant::placeholder {
+            color: #002019;
+            opacity: 0.7;
+        }
+
+        .input__container--variant {
+            background: linear-gradient(to bottom, #F3FFF9, #F3FFF9);
+            border-radius: 1.5em;
+            max-width: 14em;
+            padding: 1em;
+            box-shadow: 0em 1em 3em #beecdc64;
+        }
+
+        h2 {
+            color: #002019;
+            font-weight: 700;
+            font-family: "Cairo Play", serif;
+            margin-top: 12px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+           <div class="main">
+            <div class="input__container input__container--variant">
+                <div class="shadow__input shadow__input--variant"></div>
+                <input type="text" name="text" class="  input__search input__search--variant "
+                    placeholder="إكتب إسم السورة" id="inputx">
+                <button class="input__button__shadow input__button__shadow--variant" onclick="go()">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="1.5em" width="13em">
+                        <path
+                            d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z"
+                            fill-rule="evenodd" fill="#FFF"></path>
+                    </svg>
+                </button>
+            </div>
+            <br>
+            <div class="card ">
+                <p class="ho">القرءان الكريم يحتوي علي 114 سوره 86 منهم مكيه و 28 مدنيه ومن خلال هذا الموقع يمكنك معرفة عدد أيات كل
+                سور و هل هي مكيه أم مدنية وما رقم صفحتها في المصحف</p>
+
+            </div>
+            <br>
+            <h2>copyrights <span>@</span> Yousef Omara</h2>
+
+        </div>
+    </main>
+
+</body>
+<script>
+    let inp = document.getElementById("inputx");
+    let ho = document.getElementsByClassName("ho")[0];
+    let t = document.getElementsByClassName("t")[0];
+    function go() {
+        switch (inp.value) {
+            case "الفاتحة": ho.innerHTML = "أول سوره- الصفحه: 1 - مكية - عدد الآيات: 7";
+                break;
+            case "الفاتحه": ho.innerHTML = "أول سوره- الصفحه: 1 - مكية - عدد الآيات: 7";
+                break;
+            case "البقرة": ho.innerHTML = "ثاني سوره - الصفحه: 2 - مدنية - عدد الآيات: 286";
+                break;
+            case "البقره": ho.innerHTML = "ثاني سوره - الصفحه: 2 - مدنية - عدد الآيات: 286";
+                break;
+            case "آل عمران": ho.innerHTML = "ثالث سوره - الصفحه: 50  - مدنية - عدد الآيات: 200";
+                break;
+            case "ال عمران": ho.innerHTML = "ثالث سوره - الصفحه: 50  - مدنية - عدد الآيات: 200";
+                break;
+                break;
+            case "أل عمران": ho.innerHTML = "ثالث سوره - الصفحه: 50  - مدنية - عدد الآيات: 200";
+
+            case "النساء": ho.innerHTML = "رابع سوره - الصفحه: 77 - مدنية - عدد الآيات: 176";
+                break;
+            case "المائدة": ho.innerHTML = "خامس سوره - الصفحه: 106 - مدنية - عدد الآيات: 120";
+                break;
+            case "المائده": ho.innerHTML = "خامس سوره - الصفحه: 106 - مدنية - عدد الآيات: 120";
+                break;
+            case "الأنعام": ho.innerHTML = "سادس سوره - الصفحه: 128 - مكية - عدد الآيات: 165";
+                break;
+            case "الانعام": ho.innerHTML = "سادس سوره - الصفحه: 128 - مكية - عدد الآيات: 165";
+                break;
+            case "الأعراف": ho.innerHTML = "سابع سوره - الصفحه: 151 - مكية - عدد الآيات: 206";
+                break;
+            case "الاعراف": ho.innerHTML = "سابع سوره - الصفحه: 151 - مكية - عدد الآيات: 206";
+                break;
+            case "الأنفال": ho.innerHTML = "ثامن سوره - الصفحه: 177 - مدنية - عدد الآيات: 75";
+                break;
+            case "الانفال": ho.innerHTML = "ثامن سوره - الصفحه: 177 - مدنية - عدد الآيات: 75";
+                break;
+            case "التوبة": ho.innerHTML = "تاسع سوره - الصفحه: 187 - مدنية - عدد الآيات: 129";
+                break;
+            case "التوبه": ho.innerHTML = "تاسع سوره - الصفحه: 187 - مدنية - عدد الآيات: 129";
+                break;
+            case "يونس": ho.innerHTML = "عاشر سوره - الصفحه: 208 - مكية - عدد الآيات: 109";
+                break;
+            case "هود": ho.innerHTML = "الحادية عشرة - الصفحه: 221 - مكية - عدد الآيات: 123";
+                break;
+            case "يوسف": ho.innerHTML = "الثانية عشر - الصفحه: 235 - مكية - عدد الآيات: 111";
+                break;
+            case "الرعد": ho.innerHTML = "الثالثة عشرة - الصفحه: 249 - مختلف فيها - عدد الآيات: 43";
+                break;
+            case "إبراهيم": ho.innerHTML = "الرابعة سوره - الصفحه: 255 - مكية - عدد الآيات: 52";
+                break;
+            case "ابراهيم": ho.innerHTML = "الرابعة سوره - الصفحه: 255 - مكية - عدد الآيات: 52";
+                break;
+            case "الحجر": ho.innerHTML = "الخامسة سوره - الصفحه: 262 - مكية - عدد الآيات: 99";
+                break;
+            case "النحل": ho.innerHTML = "السادسة سوره - الصفحه: 267 - مكية - عدد الآيات: 128";
+                break;
+            case "الإسراء": ho.innerHTML = "السابعة عشرة - الصفحه: 282 - مكية - عدد الآيات: 111";
+                break;
+            case "الكهف": ho.innerHTML = "الثامنة عشرة - الصفحه: 293 - مكية - عدد الآيات: 110";
+                break;
+            case "مريم": ho.innerHTML = "التاسعة عشرة - الصفحه: 305 - مكية - عدد الآيات: 98";
+                break;
+            case "طه": ho.innerHTML = "العشرون - الصفحه: 312 - مكية - عدد الآيات: 135";
+                break;
+            case "طة": ho.innerHTML = "العشرون - الصفحه: 312 - مكية - عدد الآيات: 135";
+                break;
+            case "الأنبياء": ho.innerHTML = "الحادية والعشرون - الصفحه: 322 - مكية - عدد الآيات: 112";
+                break;
+            case "الحج": ho.innerHTML = "الثانية والعشرون - الصفحه: 332 - مدنية - عدد الآيات: 78";
+                break;
+            case "المؤمنون": ho.innerHTML = "الثالثة والعشرون - الصفحه: 342 - مكية - عدد الآيات: 118";
+                break;
+            case "النور": ho.innerHTML = "الرابعة والعشرون - الصفحه: 350 - مدنية - عدد الآيات: 64";
+                break;
+            case "الفرقان": ho.innerHTML = "الخامسة والعشرون - الصفحه: 359 - مكية - عدد الآيات: 77";
+                break;
+            case "الشعراء": ho.innerHTML = "السادسة والعشرون - الصفحه: 367  - مكية - عدد الآيات: 227";
+                break;
+            case "النمل": ho.innerHTML = "السابعة والعشرون - الصفحه: 377 - مكية - عدد الآيات: 93";
+                break;
+            case "القصص": ho.innerHTML = "الثامنة والعشرون - الصفحه: 385 - مكية - عدد الآيات: 88";
+                break;
+            case "العنكبوت": ho.innerHTML = "التاسعة والعشرون - الصفحه: 396 - مكية - عدد الآيات: 69";
+                break;
+            case "الروم": ho.innerHTML = "الثلاثون - الصفحه: 404 - مكية - عدد الآيات: 60";
+                break;
+            case "لقمان": ho.innerHTML = "الحادية والثلاثون - الصفحه: 411 - مكية - عدد الآيات: 34";
+                break;
+            case "السجدة": ho.innerHTML = "الثانية والثلاثون - الصفحه: 415 - مكية - عدد الآيات: 30";
+                break;
+            case "السجده": ho.innerHTML = "الثانية والثلاثون - الصفحه: 415 - مكية - عدد الآيات: 30";
+                break;
+            case "الأحزاب": ho.innerHTML = "الثالثة والثلاثون - الصفحه: 418 - مدنية - عدد الآيات: 73";
+                break;
+            case "سبأ": ho.innerHTML = "الرابعة والثلاثون - الصفحه: 428 - مكية - عدد الآيات: 54";
+                break;
+            case "سبأ": ho.innerHTML = "الرابعة والثلاثون - الصفحه: 428 - مكية - عدد الآيات: 54";
+                break;
+            case "فاطر": ho.innerHTML = "الخامسة والثلاثون - الصفحه: 434 - مكية - عدد الآيات: 45";
+                break;
+            case "يس": ho.innerHTML = "السادسة والثلاثون - الصفحه: 440 - مكية - عدد الآيات: 83";
+                break;
+            case "الصافات": ho.innerHTML = "السابعة والثلاثون - الصفحه: 446 - مكية - عدد الآيات: 182";
+                break;
+            case "ص": ho.innerHTML = "الثامنة والثلاثون - الصفحه: 453 - مكية - عدد الآيات: 88";
+                break;
+            case "الزمر": ho.innerHTML = "التاسعة والثلاثون - الصفحه: 458 - مكية - عدد الآيات: 75";
+                break;
+            case "غافر": ho.innerHTML = "الأربعون - الصفحه: 467 - مكية - عدد الآيات: 85";
+                break;
+            case "فصلت": ho.innerHTML = "الحادية والأربعون - الصفحه: 477 - مكية - عدد الآيات: 54";
+                break;
+            case "الشورى": ho.innerHTML = "الثانية والأربعون - الصفحه: 483 - مكية - عدد الآيات: 53";
+                break;
+            case "الشوري": ho.innerHTML = "الثانية والأربعون - الصفحه: 483 - مكية - عدد الآيات: 53";
+                break;
+            case "الزخرف": ho.innerHTML = "الثالثة والأربعون - الصفحه: 489 - مكية - عدد الآيات: 89";
+                break;
+            case "الدخان": ho.innerHTML = "الرابعة والأربعون - الصفحه: 496 - مكية - عدد الآيات: 59";
+                break;
+            case "الجاثية": ho.innerHTML = "الخامسة والأربعون - الصفحه: 499 - مكية - عدد الآيات: 37";
+                break;
+            case "الجاثيه": ho.innerHTML = "الخامسة والأربعون - الصفحه: 499 - مكية - عدد الآيات: 37";
+                break;
+            case "الأحقاف": ho.innerHTML = "السادسة والأربعون - الصفحه: 502 - مكية - عدد الآيات: 35";
+                break;
+            case "محمد": ho.innerHTML = "السابعة والأربعون - الصفحه: 507 - مدنية - عدد الآيات: 38";
+                break;
+            case "الفتح": ho.innerHTML = "الثامنة والأربعون - الصفحه: 511 - مدنية - عدد الآيات: 29";
+                break;
+            case "الحجرات": ho.innerHTML = "التاسعة والأربعون - الصفحه: 515 - مدنية - عدد الآيات: 18";
+                break;
+            case "ق": ho.innerHTML = "الخمسون - الصفحه: 518 - مكية - عدد الآيات: 45";
+                break;
+            case "الذاريات": ho.innerHTML = "الحادية والخمسون - الصفحه: 520 - مكية - عدد الآيات: 60";
+                break;
+            case "الطور": ho.innerHTML = "الثانية والخمسون - الصفحه: 523 - مكية - عدد الآيات: 49";
+                break;
+            case "النجم": ho.innerHTML = "الثالثة والخمسون - الصفحه: 526 - مكية - عدد الآيات: 62";
+                break;
+            case "القمر": ho.innerHTML = "الرابعة والخمسون - الصفحه: 528 - مكية - عدد الآيات: 55";
+                break;
+            case "الرحمن": ho.innerHTML = "الخامسة والخمسون - الصفحه: 531 - مدنية - عدد الآيات: 78";
+                break;
+            case "الواقعة": ho.innerHTML = "السادسة والخمسون - الصفحه: 534 - مكية - عدد الآيات: 96";
+                break;
+            case "الواقعه": ho.innerHTML = "السادسة والخمسون - الصفحه: 534 - مكية - عدد الآيات: 96";
+                break;
+            case "الحديد": ho.innerHTML = "السابعة والخمسون - الصفحه: 537 - مدنية - عدد الآيات: 29";
+                break;
+            case "المجادلة": ho.innerHTML = "الثامنة والخمسون - الصفحه: 542 - مدنية - عدد الآيات: 22";
+                break;
+            case "المجادله": ho.innerHTML = "الثامنة والخمسون - الصفحه: 542 - مدنية - عدد الآيات: 22";
+                break;
+            case "الحشر": ho.innerHTML = "التاسعة والخمسون - الصفحه: 545 - مدنية - عدد الآيات: 24";
+                break;
+            case "الممتحنة": ho.innerHTML = "الستون - الصفحه: 549 - مدنية - عدد الآيات: 13";
+                break;
+            case "الممتحنه": ho.innerHTML = "الستون - الصفحه: 549 - مدنية - عدد الآيات: 13";
+                break;
+            case "الصف": ho.innerHTML = "الحادية والستون - الصفحه: 551 - مدنية - عدد الآيات: 14";
+                break;
+            case "الجمعة": ho.innerHTML = "الثانية والستون - الصفحه: 553 - مدنية - عدد الآيات: 11";
+                break;
+            case "الجمعه": ho.innerHTML = "الثانية والستون - الصفحه: 553 - مدنية - عدد الآيات: 11";
+                break;
+            case "المنافقون": ho.innerHTML = "الثالثة والستون - الصفحه: 554 - مدنية - عدد الآيات: 11";
+                break;
+            case "التغابن": ho.innerHTML = "الرابعة والستون - الصفحه: 556 - مدنية - عدد الآيات: 18";
+                break;
+            case "الطلاق": ho.innerHTML = "الخامسة والستون - الصفحه: 558 - مدنية - عدد الآيات: 12";
+                break;
+            case "التحريم": ho.innerHTML = "السادسة والستون - الصفحه: 560 - مدنية - عدد الآيات: 12";
+                break;
+            case "الملك": ho.innerHTML = "السابعة والستون - الصفحه:562 - مكية - عدد الآيات: 30";
+                break;
+            case "القلم": ho.innerHTML = "الثامنة والستون - الصفحه: 564 - مكية - عدد الآيات: 52";
+                break;
+            case "الحاقة": ho.innerHTML = "التاسعة والستون - الصفحه: 566 - مكية - عدد الآيات: 52";
+                break;
+            case "الحاقه": ho.innerHTML = "التاسعة والستون - الصفحه: 566 - مكية - عدد الآيات: 52";
+                break;
+            case "المعارج": ho.innerHTML = "السبعون - الصفحه: 568 - مكية - عدد الآيات: 44";
+                break;
+            case "نوح": ho.innerHTML = "الحادية والسبعون - الصفحه: 570 - مكية - عدد الآيات: 28";
+                break;
+            case "الجن": ho.innerHTML = "الثانية والسبعون - الصفحه: 572 - مكية - عدد الآيات: 28";
+                break;
+            case "المزمل": ho.innerHTML = "الثالثة والسبعون - الصفحه: 574 - مكية - عدد الآيات: 20";
+                break;
+            case "المدثر": ho.innerHTML = "الرابعة والسبعون- الصفحه: 575 - مكية - عدد الآيات: 56";
+                break;
+            case "القيامة": ho.innerHTML = "الخامسة والسبعون- الصفحه: 577 - مكية - عدد الآيات: 40";
+                break;
+            case "الإنسان": ho.innerHTML = "السادسة والسبعون - الصفحه: 578 - مدنية - عدد الآيات: 31";
+                break;
+            case "الانسان": ho.innerHTML = "السادسة والسبعون - الصفحه: 578 - مدنية - عدد الآيات: 31";
+                break;
+            case "الأنسان": ho.innerHTML = "السادسة والسبعون - الصفحه: 578 - مدنية - عدد الآيات: 31";
+                break;
+            case "المرسلات": ho.innerHTML = "السابعة والسبعون - الصفحه: 580 - مكية - عدد الآيات: 50";
+                break;
+            case "النبأ": ho.innerHTML = "الثامنة والسبعون - الصفحه: 582 - مكية - عدد الآيات: 40";
+                break;
+            case "النبا": ho.innerHTML = "الثامنة والسبعون - الصفحه: 582 - مكية - عدد الآيات: 40";
+                break;
+            case "النازعات": ho.innerHTML = "التاسعة والسبعون - الصفحه: 583 - مكية - عدد الآيات: 46";
+                break;
+            case "عبس": ho.innerHTML = "الثمانون - الصفحه: 585 - مكية - عدد الآيات: 42";
+                break;
+            case "التكوير": ho.innerHTML = "الحادية والثمانون - الصفحه: 586 - مكية - عدد الآيات: 29";
+                break;
+            case "الإنفطار": ho.innerHTML = "الثانية والثمانون - الصفحه: 587 - مكية - عدد الآيات: 19";
+                break;
+            case "المطففين": ho.innerHTML = "الثالثة والثمانون - الصفحه: 587 - مكية - عدد الآيات: 36";
+                break;
+            case "الإنشقاق": ho.innerHTML = "الرابعة والثمانون - الصفحه: 589 - مكية - عدد الآيات: 25";
+                break;
+            case "البروج": ho.innerHTML = "الخامسة والثمانون - الصفحه: 590 - مكية - عدد الآيات: 22";
+                break;
+            case "الطارق": ho.innerHTML = "السادسة والثمانون - الصفحه: 591 - مكية - عدد الآيات: 17";
+                break;
+            case "الأعلى": ho.innerHTML = "السابعة والثمانون - الصفحه: 591 - مكية - عدد الآيات: 19";
+                break;
+            case "الأعلي": ho.innerHTML = "السابعة والثمانون - الصفحه: 591 - مكية - عدد الآيات: 19";
+                break;
+            case "الاعلي": ho.innerHTML = "السابعة والثمانون - الصفحه: 591 - مكية - عدد الآيات: 19";
+                break;
+            case "الاعلى": ho.innerHTML = "السابعة والثمانون - الصفحه: 591 - مكية - عدد الآيات: 19";
+                break;
+            case "الغاشية": ho.innerHTML = "الثامنة والثمانون - الصفحه: 592 - مكية - عدد الآيات: 26";
+                break;
+            case "الغاشيه": ho.innerHTML = "الثامنة والثمانون - الصفحه: 592 - مكية - عدد الآيات: 26";
+                break;
+            case "الفجر": ho.innerHTML = "التاسعة والثمانون - الصفحه: 593 - مكية - عدد الآيات: 30";
+                break;
+            case "البلد": ho.innerHTML = "التسعون - الصفحه: 594 - مكية - عدد الآيات: 20";
+                break;
+            case "الشمس": ho.innerHTML = "الحادية والتسعون - الصفحه: 595 - مكية - عدد الآيات: 15";
+                break;
+            case "الليل": ho.innerHTML = "الثانية والتسعون - الصفحه: 595 - مكية - عدد الآيات: 21";
+                break;
+            case "الضحى": ho.innerHTML = "الثالثة والتسعون - الصفحه: 596 - مكية - عدد الآيات: 11";
+                break;
+            case "الضحي": ho.innerHTML = "الثالثة والتسعون - الصفحه: 596 - مكية - عدد الآيات: 11";
+                break;
+            case "الشرح": ho.innerHTML = "الرابعة والتسعون - الصفحه: 596 - مكية - عدد الآيات: 8";
+                break;
+            case "التين": ho.innerHTML = "الخامسه والتسعون - الصفحه: 597 - مكية - عدد الآيات: 8";
+                break;
+            case "العلق": ho.innerHTML = "السادسة والتسعون - الصفحه: 597  - مكية - عدد الآيات: 19";
+                break;
+            case "القدر": ho.innerHTML = "السابعة والتسعون - الصفحه: 598 - مكية - عدد الآيات: 5";
+                break;
+            case "البينة": ho.innerHTML = "الثامنة والتسعون - الصفحه: 598 - مدنية - عدد الآيات: 8";
+                break;
+            case "البينه": ho.innerHTML = "الثامنة والتسعون - الصفحه: 598 - مدنية - عدد الآيات: 8";
+                break;
+            case "الزلزلة": ho.innerHTML = "التاسعة والتسعون - الصفحه: 599 - مدنية - عدد الآيات: 8";
+                break;
+            case "الزلزله": ho.innerHTML = "التاسعة والتسعون - الصفحه: 599 - مدنية - عدد الآيات: 8";
+                break;
+            case "العاديات": ho.innerHTML = "المائة - الصفحه: 599 - مكية - عدد الآيات: 11";
+                break;
+            case "القارعة": ho.innerHTML = "المائة وواحدة - الصفحه: 600 - مكية - عدد الآيات: 11";
+                break;
+            case "القارعه": ho.innerHTML = "المائة وواحدة - الصفحه: 600 - مكية - عدد الآيات: 11";
+                break;
+            case "التكاثر": ho.innerHTML = "المائة واثنان - الصفحه: 600 - مكية - عدد الآيات: 8";
+                break;
+            case "العصر": ho.innerHTML = "المائة وثلاثة - الصفحه: 601 - مكية - عدد الآيات: 3";
+                break;
+            case "الهمزة": ho.innerHTML = "المائة وأربعة - الصفحه: 601 - مكية - عدد الآيات: 9";
+                break;
+            case "الهمزه": ho.innerHTML = "المائة وأربعة - الصفحه: 601 - مكية - عدد الآيات: 9";
+                break;
+            case "الفيل": ho.innerHTML = "المائة وخمسة - الصفحه: 601 - مكية - عدد الآيات: 5";
+                break;
+            case "قريش": ho.innerHTML = "المائة وستة - الصفحه: 602 - مكية - عدد الآيات: 4";
+                break;
+            case "الماعون": ho.innerHTML = "المائة وسبعة - الصفحه: 602 - مكية - عدد الآيات: 7";
+                break;
+            case "الكوثر": ho.innerHTML = "المائة وثمانية - الصفحه: 602 - مكية - عدد الآيات: 3";
+                break;
+            case "الكافرون": ho.innerHTML = "المائة وتسعة - الصفحه: 603 - مكية - عدد الآيات: 6";
+                break;
+            case "النصر": ho.innerHTML = "المائة وعشرة - الصفحه: 603 - مدنية - عدد الآيات: 3";
+                break;
+            case "المسد": ho.innerHTML = "المائة وأحد عشر - الصفحه: 603 - مكية - عدد الآيات: 5";
+                break;
+            case "الإخلاص": ho.innerHTML = "المائة واثنا عشر - الصفحه: 604 - مكية - عدد الآيات: 4";
+                break;
+            case "الاخلاص": ho.innerHTML = "المائة واثنا عشر - الصفحه: 604 - مكية - عدد الآيات: 4";
+                break;
+            case "الأخلاص": ho.innerHTML = "المائة واثنا عشر - الصفحه: 604 - مكية - عدد الآيات: 4";
+                break;
+            case "الفلق": ho.innerHTML = "المائة وثلاثة عشر - الصفحه: 604 - مكية - عدد الآيات: 5";
+                break;
+            case "الناس": ho.innerHTML = "المائة وأربعة عشر - الصفحه: 604 - مكية - عدد الآيات: 6";
+                break;
+            case "": ho.innerHTML = ".برجاء إدخال إسم السوره";
+                break;
+            default:
+                ho.innerHTML = ".عذرا, لم يتم العثور علي السوره يرجي مراعات الأخطاء الإملائيه";
+
+
+
+
+        }
+    }
+</script>
+
+</html>
