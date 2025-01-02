@@ -13,7 +13,15 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        }
+        #message, #bt {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #message {
+            width: 300px;
+        }
         main {
             background: url("صور-خلفيات-دينية-إسلامية-رائعة-للجوال.jpg") no-repeat;
             background-size: cover;
@@ -63,14 +71,14 @@
         .main {
 
 
-            margin-top: 100px;
-            height: 800px;
+            margin-top: 50px;
+            height: 900px;
             border-radius: 15px;
                overflow: auto;
             padding: 5px;
             display: flex;
             flex-direction: column;
-            width: 320px;
+            width: 400px;
             align-items: center;
             justify-content: center;
 
@@ -176,12 +184,22 @@
             </div>
             <br>
             <h2>copyrights <span>©</span> Yousef Omara</h2>
+                 
+    <input type="text" id="message" placeholder="أبلغ عن خطأ أو معلومات غير صحيحه" />
+    <button onclick="sendMessage()" id = "bt">إرسال</button>
 
         </div>
     </main>
 
 </body>
 <script>
+
+            function sendMessage() {
+            const message = document.getElementById('message').value;
+            const phone = '201100718942'; // استبدل برقمك
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
     let inp = document.getElementById("inputx");
     let ho = document.getElementsByClassName("ho")[0];
     let t = document.getElementsByClassName("t")[0];
